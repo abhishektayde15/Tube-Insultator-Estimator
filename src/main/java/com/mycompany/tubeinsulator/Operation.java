@@ -8,9 +8,12 @@ package com.mycompany.tubeinsulator;
  *
  * @author ACER
  */
-public class Cork extends Cylinder {
+public class Operation {
+   
+  
+  public double getInsulatorArea(){
+      
+  }
+
     
-    public Cork(double radius,double height){
-        super(radius,height);
-    }  
 }

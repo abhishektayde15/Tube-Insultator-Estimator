@@ -8,6 +8,10 @@ package com.mycompany.tubeinsulator;
  *
  * @author ACER
  */
-public class Insulator {
+public class Insulator extends Cylinder{
+
+    public Insulator(double radius,double height){
+        super(radius,height);
+    }
     
 }

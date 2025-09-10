@@ -8,33 +8,11 @@ package com.mycompany.tubeinsulator;
  *
  * @author ACER
  */
-public class Tube {
-    private double height;
-    private double radius;
-    
-    public Tube(double height,double radius){
-        this.height=height;
-        this.radius=radius;
-    }
-    public  void setHeight(double height){
-        this.height=height;     
-    }
-    
-     public  void setRadius(double height,double radius){
-        this.radius=radius;    
-    }
-    public double getHeight(){
-        return height;
-    }
-    public double getRadius(){
-        return radius;
-    }
-    public double areaOfTube(){
-        return 2*3.14*radius*height;
-    }
-    public double volumeOfTube(){
-        return 3.14*radius*radius*height;
-    }
+public class Tube extends Cylinder {
+   
+   public Tube(double radius,double height){
+       super(radius,height);
+   }
     
     
 }

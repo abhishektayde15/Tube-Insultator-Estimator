@@ -9,5 +9,26 @@ package com.mycompany.tubeinsulator;
  * @author ACER
  */
 public class Estimate {
-    
+  private Cylinder Tubecylinder;
+  private Cylinder InsulatorCylinder;
+  public Estimate (double tubeRadius,double tubeHeight,double insulatorRadius,double insulatorHeight){
+      Tubecylinder=new Tube(tubeRadius,tubeHeight);
+      InsulatorCylinder=new Insulator(insulatorRadius,insulatorHeight);
+  } 
+  
+ public double getTubeVolume(){
+    return Tubecylinder.getCylinderVolume();
+ }
+ 
+ public double getInsulatorVloume(){
+     return InsulatorCylinder.getCylinderVolume();
+ }
+ 
+ public double getCorkVolume(){
+     return Tubecylinder.getCylinderVolume()-InsulatorCylinder.getCylinderVolume();
+ }
+ 
+ 
 }
+
+
